@@ -314,11 +314,13 @@ public class GenderDemographicsMap extends PApplet{
 		}
         */
 	
-	public void keyPressed(){
-		
-		lastClicked = new HashMap<Marker, float[]>();
-		
+	public void keyPressed(){		
+		lastClicked = new HashMap<Marker, float[]>();		
 	} 
+	
+	public void mouseDragged(){
+		lastClicked = new HashMap<Marker, float[]>();		
+	}
 	
 	
 	public void showTitle(Marker country, float x, float y){
